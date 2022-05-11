@@ -10,7 +10,7 @@ const allParks = 'SELECT * FROM park_name.park_admission;';
 
 router.route('/jacob/')
   .all((req, res, next) => {
-    // runs for all HTTP verbs first
+    // runs for all HTTP verbs first, specified end routes
     // think of it as route specific middleware!
     next();
   })
